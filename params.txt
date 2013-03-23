@@ -1,0 +1,17 @@
+/path/to/data/a_file.txt
+/path/to/data/another_file.txt
+2 1 0
+2 2
+4 2
+zip    5   70  81
+flast  1   20  21
+last   20  20  21  uo  0.01  0.99
+first  20  0   0   uo  0.20  0.80
+mi     1   40  20  c   0.04  0.49
+hsnm   12  57  40  c   0.06  0.999
+0.1 0.9
+hsnm   12  57  40
+last   20  20  21
+first  20  0   0   uo  0.20  0.80
+dob    8   41  43  d   0.3   0.7
+0.2 0.85
