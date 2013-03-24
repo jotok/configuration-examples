@@ -1,7 +1,7 @@
 configuration-examples
 ======================
 
-This repository contains source code examples demonstrating how to use lua and guile to process configuration files. The file params.txt in the root directory gives an example configuration file that we'd like replace. The folders lua/ and guile/ contain the solutions using those interpreters. The examples were written using lua 5.2 and guile 1.8.
+This repository contains source code examples demonstrating how to use lua and guile to process configuration files. The file params.txt in the root directory gives an example configuration file that we'd like replace. The folders lua/ and guile/ contain the solutions using those interpreters. The examples were written using lua 5.2 and guile 1.8. I wrote some additional thoughts about this experiment in a [blog post](http://tokle.us/programming/2013/03/24/configuration-files-in-lua-and-scheme/).
 
 params.txt is the configuration file for an imaginary record linkage program (that is, a program that tries to match records in two files that represent the same entity). The input is two text files with data in fixed-width columns. The program operates in passes, and each pass has a blocking stage and a matching stage. In the blocking stage, we bring records together which match exactly on indicated fields (called the blocking fields). In the matching stage we compute match score for each pair of records in a block using additional data columns. After all passes are completed, we output results.
 
@@ -39,4 +39,4 @@ There is an analogous section that describes the blocking fields, matching field
     dob    8   41  43  d   0.3   0.7
     0.2 0.85
 
-As I stated above, the purpose of this repository is to see how I could replace this configuration file with one written in lua or scheme.
+As I stated above, the purpose of this repository is to see how I could replace this configuration file with one written in lua or scheme. See lua/params.lua and scm/params.scm for my solutions.
